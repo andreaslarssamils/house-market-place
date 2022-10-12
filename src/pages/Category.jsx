@@ -110,9 +110,7 @@ export default function Category() {
     <div className="category">
       <header>
         <p className="pageHeader">
-          {params.categoryName === 'rent'
-            ? 'Ställen att hyra'
-            : 'Ställen att köpa'}
+          {params.categoryName === 'rent' ? 'For rent' : 'For Sale'}
         </p>
       </header>
 
@@ -137,7 +135,7 @@ export default function Category() {
           <br />
           {lastFetchedListing && (
             <p className="loadMore" onClick={onFetchMoreListings}>
-              Ladda fler
+              Load More
             </p>
           )}
         </>

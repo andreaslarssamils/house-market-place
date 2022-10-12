@@ -116,7 +116,7 @@ export default function CreateListing() {
       geolocation.lat = latitude;
       geolocation.lng = longitude;
       // eslint-disable-next-line no-unused-vars
-      // location = address;
+      location = address;
     }
 
     // Store images in firebase
@@ -175,10 +175,10 @@ export default function CreateListing() {
       timestamp: serverTimestamp(),
     };
 
-    formDataCopy.location = address;
+    // formDataCopy.location = address;
     delete formDataCopy.images;
     delete formDataCopy.address;
-    // location && (formData.location = location);
+    location && (formData.location = location);
     !formDataCopy.offer && delete formDataCopy.discountedPrice;
 
     const docRef = await addDoc(collection(db, 'listings'), formDataCopy);
