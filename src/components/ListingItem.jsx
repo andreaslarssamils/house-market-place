@@ -28,18 +28,20 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
               : listing.regularPrice
                   .toString()
                   .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-            {listing.type === 'rent' && 'KR / Månad'}
+            {listing.type === 'rent' && ' / Month'}
           </p>
           <div className="categoryListingInfoDiv">
             <img src={bedIcon} alt="bed" />
             <p className="categoryListingInfoText">
-              {listing.bedrooms > 1 ? `${listing.bedrooms} Sovrum` : '1 Sovrum'}
+              {listing.bedrooms > 1
+                ? `${listing.bedrooms} Bedroom`
+                : '1 Bedroom'}
             </p>
             <img src={bathtubIcon} alt="bath" />
             <p className="categoryListingInfoText">
               {listing.bathrooms > 1
-                ? `${listing.bathrooms} Badrum`
-                : '1 Badrum'}
+                ? `${listing.bathrooms} Bathroom`
+                : '1 Bathroom'}
             </p>
           </div>
         </div>

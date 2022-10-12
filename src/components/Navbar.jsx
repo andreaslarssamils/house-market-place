@@ -31,7 +31,7 @@ export default function Navbar() {
                   : 'navbarListItemName'
               }
             >
-              Utforska
+              Explore
             </p>
           </li>
           <li className="navbarListItem" onClick={() => navigate('/offer')}>
@@ -47,7 +47,7 @@ export default function Navbar() {
                   : 'navbarListItemName'
               }
             >
-              Erbjudanden
+              Offers
             </p>
           </li>
           <li className="navbarListItem" onClick={() => navigate('/profile')}>
@@ -63,7 +63,7 @@ export default function Navbar() {
                   : 'navbarListItemName'
               }
             >
-              Profil
+              Profile
             </p>
           </li>
         </ul>
