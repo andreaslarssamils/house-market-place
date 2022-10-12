@@ -117,7 +117,7 @@ export default function SignUp() {
 
           <OAuth />
 
-          <Link to="/sign-up" className="registerLink">
+          <Link to="/sign-in" className="registerLink">
             Sign In Instead
           </Link>
         </main>
