@@ -82,8 +82,8 @@ export default function Listing() {
 
       <div className="listingDetails">
         <p className="listingName">
-          {listing.name} -{' '}
-          {listing.offer ? listing.discountedPrice : listing.regularPrice}KR
+          {listing.name} - ₱
+          {listing.offer ? listing.discountedPrice : listing.regularPrice}
         </p>
         <p className="listingLocation">{listing.location}</p>
         <p className="listingType">
