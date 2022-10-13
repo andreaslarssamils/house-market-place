@@ -48,7 +48,7 @@ export default function SignIn() {
     <>
       <div className="pageContainer">
         <header>
-          <p className="pageHeader">Välkommen tillbaka :)</p>
+          <p className="pageHeader">Welcome! Sign in Pls</p>
         </header>
 
         <main>
