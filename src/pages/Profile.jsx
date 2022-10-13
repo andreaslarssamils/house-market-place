@@ -171,6 +171,7 @@ function Profile() {
           </>
         )}
       </main>
+      <div>You can reach out to support here: larssamils.andreas@gmail.com</div>
     </div>
   );
 }
